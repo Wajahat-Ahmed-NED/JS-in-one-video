@@ -54,14 +54,43 @@
         //Events
 
 function clicked(){
-        console.log('The button was clicked')
+        alert('Your response is recorded successfully')
 }
-window.onload= function (){
-        console.log('The document was loaded')
-}
+// window.onload= function (){
+//         console.log('The document was loaded')
+// }
 // function clicked(){
 //     console.log('The button was clicked')
 // }
 // window.onload = function(){
 //     console.log('The document was loaded')
 // }
+
+// window.onload=function(){
+//         console.log("window was loaded")
+// }
+// firstContainer.addEventListener('click',function(){
+//         console.log('Clicked on div')
+// })
+// firstContainer.addEventListener('mouseover',function(){
+//         console.log('Mouse on div')
+// })
+// firstContainer.addEventListener('mouseout',function(){
+//         console.log('Mouse out of on div')
+// })
+// firstContainer.addEventListener('mouseup',function(){
+//         console.log('Mouse up  of on div')
+// })
+// firstContainer.addEventListener('mousedown',function(){
+//         console.log('Mouse down  of on div')
+// })
+
+let prevHTML=document.querySelectorAll('.container')[1].innerHTML;
+document.addEventListener('mouseup',function(){
+        document.querySelectorAll('.container')[1].innerHTML=prevHTML;
+        console.log('Mouse up event occur')
+})
+document.addEventListener('mousedown',function(){
+        document.querySelectorAll('.container')[1].innerHTML="<b>This is bold</b>"
+        console.log('Mouse Down event occur')
+})
