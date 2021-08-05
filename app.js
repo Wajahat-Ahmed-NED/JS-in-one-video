@@ -94,3 +94,4 @@ document.addEventListener('mousedown',function(){
         document.querySelectorAll('.container')[1].innerHTML="<b>This is bold</b>"
         console.log('Mouse Down event occur')
 })
+
